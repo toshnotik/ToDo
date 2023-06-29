@@ -1,0 +1,41 @@
+body{
+    background-color: aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.app{
+    margin: 0 auto;
+    padding-top: 5%;
+}
+.app-todo{
+    display: grid;
+    justify-content: center;
+}
+.todo{
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #070707;
+    -webkit-box-swadow: 0 0 10px 0 #070707;
+}
+.todo-new{
+    display: grid;
+    gap: 0.5rem;
+}
+button{
+    background-color: var(--bs-info-bg-subtle);
+}
+button:hover {
+    background-color: var(--bs-info);
+}
+.todo-list__list li{
+    padding: 1em;
+    list-style-type: none;
+}
+.todo-list__list li:not(:last-child){
+    border-bottom: 1px solid #000;
+}
+.important{
+    font-weight: bold;
+    color: var(--bs-danger);
+}
